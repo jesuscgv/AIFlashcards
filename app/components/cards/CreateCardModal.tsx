@@ -13,10 +13,10 @@ import {
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea" // Use Textarea for front/back
 import { Label } from "@/components/ui/label"
-import { createClient } from "@/lib/supabase/client"
+import { createClient } from '@/lib/supabase/browser-client'
 import { Database } from '@/lib/supabase/database.types'
 
-type FlashCard = Database['public']['Tables']['cards']['Row']
+type FlashCard = Database['public']['Tables']['flashcards']['Row']
 
 interface CreateCardModalProps {
   isOpen: boolean

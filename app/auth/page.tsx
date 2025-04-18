@@ -2,7 +2,7 @@
 
 import { Auth } from '@supabase/auth-ui-react'
 import { ThemeSupa } from '@supabase/auth-ui-shared'
-import { createClient } from '@/lib/supabase/client'
+import { createClient } from '@/lib/supabase/browser-client'
 import { useEffect } from 'react'
 import { useRouter } from 'next/navigation' // Use next/navigation for App Router
 
@@ -44,8 +44,7 @@ export default function AuthPage() {
                 button_label: 'Iniciar sesión',
                 loading_button_label: 'Iniciando sesión...',
                 social_provider_text: 'Continuar con {{provider}}',
-                link_text: '¿Ya tienes cuenta? Inicia sesión',
-                confirmation_text: 'Revisa tu correo para el enlace de confirmación.',
+                link_text: '¿Ya tienes cuenta? Inicia sesión'
               },
               sign_up: {
                 email_label: 'Correo electrónico',
@@ -55,8 +54,7 @@ export default function AuthPage() {
                 button_label: 'Registrarse',
                 loading_button_label: 'Registrando...',
                 social_provider_text: 'Continuar con {{provider}}',
-                link_text: '¿No tienes cuenta? Regístrate',
-                confirmation_text: 'Revisa tu correo para el enlace de confirmación.',
+                link_text: '¿No tienes cuenta? Regístrate'
               },
               forgotten_password: {
                 email_label: 'Correo electrónico',

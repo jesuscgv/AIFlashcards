@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ChevronRight, Sparkles } from "lucide-react"
 import Link from 'next/link'
-import { createClient } from "@/lib/supabase/client"
+import { createClient } from '@/lib/supabase/browser-client'
 import { User } from "@supabase/supabase-js"
 
 export function Hero() {

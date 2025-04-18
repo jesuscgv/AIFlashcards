@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Layers, Menu, X } from "lucide-react"
-import { createClient } from "@/lib/supabase/client"
+import { createClient } from '@/lib/supabase/browser-client'
 import { User } from "@supabase/supabase-js"
 import { useRouter } from 'next/navigation'
 
